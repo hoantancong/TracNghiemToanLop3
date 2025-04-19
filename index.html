@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trắc nghiệm Chu vi và Diện tích</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div id="quiz-container" class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+    <!-- Màn hình bắt đầu -->
+    <div id="start-screen" class="text-center">
+      <h1 class="text-2xl font-bold mb-4">Trắc nghiệm Chu vi và Diện tích</h1>
+      <p class="mb-4">15 câu hỏi, thời gian 20 phút</p>
+      <button id="start-btn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Bắt đầu</button>
+    </div>
+
+    <!-- Màn hình trắc nghiệm -->
+    <div id="quiz-screen" class="hidden">
+      <div class="flex justify-between mb-4">
+        <div>Câu <span id="question-number">1</span>/15</div>
+        <div>Thời gian: <span id="timer">20:00</span></div>
+      </div>
+      <h2 id="question-text" class="text-lg font-semibold mb-4"></h2>
+      <div id="options" class="space-y-2"></div>
+      <p id="feedback" class="mt-4 hidden"></p>
+    </div>
+
+    <!-- Màn hình kết quả -->
+    <div id="result-screen" class="hidden text-center">
+      <h2 class="text-2xl font-bold mb-4">Kết quả</h2>
+      <p class="mb-4">Bạn trả lời đúng <span id="score"></span>/15 câu</p>
+      <button id="restart-btn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Chơi lại</button>
+    </div>
+  </div>
+
+  <script>
+    let questions = [];
+    let currentQuestions = [];
+    let currentQuestionIndex = 0;
+    let score = 0;
+    let timer;
+    let timeLeft = 20 * 60; // 20 phút tính bằng giây
+
+    // Tải dữ liệu JSON
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        questions = data.questions;
+        document.getElementById('start-btn').addEventListener('click', startQuiz);
+        document.getElementById('restart-btn').addEventListener('click', restartQuiz);
+      });
+
+    function startQuiz() {
+      // Chọn ngẫu nhiên 15 câu hỏi
+      currentQuestions = questions.sort(() => Math.random() - 0.5).slice(0, 15);
+      currentQuestionIndex = 0;
+      score = 0;
+      timeLeft = 20 * 60;
+
+      document.getElementById('start-screen').classList.add('hidden');
+      document.getElementById('quiz-screen').classList.remove('hidden');
+      startTimer();
+      showQuestion();
+    }
+
+    function startTimer() {
+      timer = setInterval(() => {
+        timeLeft--;
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        document.getElementById('timer').textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        if (timeLeft <= 0) {
+          clearInterval(timer);
+          endQuiz();
+        }
+      }, 1000);
+    }
+
+    function showQuestion() {
+      const question = currentQuestions[currentQuestionIndex];
+      document.getElementById('question-number').textContent = currentQuestionIndex + 1;
+      document.getElementById('question-text').textContent = question.question;
+
+      const optionsDiv = document.getElementById('options');
+      optionsDiv.innerHTML = '';
+      question.options.forEach((option, index) => {
+        const button = document.createElement('button');
+        button.className = 'w-full bg-gray-200 p-2 rounded hover:bg-gray-300 text-left';
+        button.textContent = option;
+        button.addEventListener('click', () => checkAnswer(index));
+        optionsDiv.appendChild(button);
+      });
+
+      document.getElementById('feedback').classList.add('hidden');
+    }
+
+    function checkAnswer(selectedIndex) {
+      const question = currentQuestions[currentQuestionIndex];
+      const buttons = document.getElementById('options').children;
+      const feedback = document.getElementById('feedback');
+
+      // Vô hiệu hóa các nút sau khi chọn
+      for (let button of buttons) {
+        button.disabled = true;
+      }
+
+      // Hiển thị màu sắc cho đáp án
+      if (selectedIndex === question.correctAnswer) {
+        buttons[selectedIndex].classList.add('bg-green-500', 'text-white');
+        score++;
+        feedback.textContent = 'Đúng! ' + question.explanation;
+        feedback.classList.remove('hidden', 'text-red-500');
+        feedback.classList.add('text-green-500');
+      } else {
+        buttons[selectedIndex].classList.add('bg-red-500', 'text-white');
+        buttons[question.correctAnswer].classList.add('bg-green-500', 'text-white');
+        feedback.textContent = 'Sai! ' + question.explanation;
+        feedback.classList.remove('hidden', 'text-green-500');
+        feedback.classList.add('text-red-500');
+      }
+
+      // Chuyển câu sau 3 giây
+      setTimeout(() => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < currentQuestions.length) {
+          showQuestion();
+        } else {
+          endQuiz();
+        }
+      }, 3000);
+    }
+
+    function endQuiz() {
+      clearInterval(timer);
+      document.getElementById('quiz-screen').classList.add('hidden');
+      document.getElementById('result-screen').classList.remove('hidden');
+      document.getElementById('score').textContent = score;
+    }
+
+    function restartQuiz() {
+      document.getElementById('result-screen').classList.add('hidden');
+      document.getElementById('start-screen').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>

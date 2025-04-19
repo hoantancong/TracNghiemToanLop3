@@ -1,0 +1,189 @@
+{
+    "questions": [
+      {
+        "question": "Chu vi của một hình vuông có cạnh dài 5 cm là bao nhiêu?",
+        "options": ["10 cm", "15 cm", "20 cm", "25 cm"],
+        "correctAnswer": 2,
+        "explanation": "Chu vi hình vuông = 4 × cạnh = 4 × 5 = 20 cm."
+      },
+      {
+        "question": "Nếu cạnh của hình vuông là 3 dm, chu vi của hình vuông đó là:",
+        "options": ["9 dm", "12 dm", "15 dm", "6 dm"],
+        "correctAnswer": 1,
+        "explanation": "Chu vi hình vuông = 4 × cạnh = 4 × 3 = 12 dm."
+      },
+      {
+        "question": "Một hình chữ nhật có chiều dài 6 cm và chiều rộng 4 cm. Chu vi của hình chữ nhật là bao nhiêu?",
+        "options": ["10 cm", "20 cm", "24 cm", "16 cm"],
+        "correctAnswer": 1,
+        "explanation": "Chu vi hình chữ nhật = 2 × (dài + rộng) = 2 × (6 + 4) = 20 cm."
+      },
+      {
+        "question": "Chu vi của hình chữ nhật được tính bằng công thức nào?",
+        "options": ["Dài × Rộng", "2 × (Dài + Rộng)", "4 × Cạnh", "Dài + Rộng"],
+        "correctAnswer": 1,
+        "explanation": "Công thức chu vi hình chữ nhật là 2 × (Dài + Rộng)."
+      },
+      {
+        "question": "Một sân chơi hình vuông có chu vi là 24 m. Độ dài mỗi cạnh của sân là bao nhiêu?",
+        "options": ["4 m", "6 m", "8 m", "12 m"],
+        "correctAnswer": 1,
+        "explanation": "Cạnh hình vuông = Chu vi ÷ 4 = 24 ÷ 4 = 6 m."
+      },
+      {
+        "question": "Nếu chu vi của hình chữ nhật là 18 cm và chiều dài là 5 cm, chiều rộng là bao nhiêu?",
+        "options": ["3 cm", "4 cm", "5 cm", "6 cm"],
+        "correctAnswer": 1,
+        "explanation": "2 × (dài + rộng) = 18 → dài + rộng = 9 → rộng = 9 - 5 = 4 cm."
+      },
+      {
+        "question": "Diện tích của một hình vuông có cạnh 4 cm là bao nhiêu?",
+        "options": ["8 cm²", "12 cm²", "16 cm²", "20 cm²"],
+        "correctAnswer": 2,
+        "explanation": "Diện tích hình vuông = cạnh × cạnh = 4 × 4 = 16 cm²."
+      },
+      {
+        "question": "Diện tích của hình chữ nhật có chiều dài 7 cm và chiều rộng 3 cm là bao nhiêu?",
+        "options": ["10 cm²", "15 cm²", "21 cm²", "24 cm²"],
+        "correctAnswer": 2,
+        "explanation": "Diện tích hình chữ nhật = dài × rộng = 7 × 3 = 21 cm²."
+      },
+      {
+        "question": "Công thức tính diện tích hình vuông là gì?",
+        "options": ["Cạnh × 4", "Cạnh × Cạnh", "2 × Cạnh", "Cạnh + Cạnh"],
+        "correctAnswer": 1,
+        "explanation": "Diện tích hình vuông được tính bằng công thức Cạnh × Cạnh."
+      },
+      {
+        "question": "Một mảnh đất hình chữ nhật có diện tích 12 m², chiều dài 4 m. Chiều rộng của mảnh đất là bao nhiêu?",
+        "options": ["2 m", "3 m", "4 m", "6 m"],
+        "correctAnswer": 1,
+        "explanation": "Rộng = Diện tích ÷ Dài = 12 ÷ 4 = 3 m."
+      },
+      {
+        "question": "Diện tích của hình vuông có cạnh 5 dm là bao nhiêu?",
+        "options": ["20 dm²", "25 dm²", "30 dm²", "15 dm²"],
+        "correctAnswer": 1,
+        "explanation": "Diện tích hình vuông = cạnh × cạnh = 5 × 5 = 25 dm²."
+      },
+      {
+        "question": "Nếu diện tích hình chữ nhật là 24 cm² và chiều rộng là 4 cm, chiều dài là bao nhiêu?",
+        "options": ["5 cm", "6 cm", "7 cm", "8 cm"],
+        "correctAnswer": 1,
+        "explanation": "Dài = Diện tích ÷ Rộng = 24 ÷ 4 = 6 cm."
+      },
+      {
+        "question": "Một hình tam giác có các cạnh là 3 cm, 4 cm và 5 cm. Chu vi của hình tam giác là bao nhiêu?",
+        "options": ["10 cm", "12 cm", "14 cm", "15 cm"],
+        "correctAnswer": 1,
+        "explanation": "Chu vi hình tam giác = 3 + 4 + 5 = 12 cm."
+      },
+      {
+        "question": "Chu vi của hình tam giác được tính bằng cách nào?",
+        "options": ["Cạnh × 3", "Tổng độ dài các cạnh", "Cạnh × Cạnh", "2 × Cạnh"],
+        "correctAnswer": 1,
+        "explanation": "Chu vi hình tam giác là tổng độ dài của tất cả các cạnh."
+      },
+      {
+        "question": "Một hình tam giác đều có cạnh 6 cm. Chu vi của hình tam giác là bao nhiêu?",
+        "options": ["12 cm", "15 cm", "18 cm", "21 cm"],
+        "correctAnswer": 2,
+        "explanation": "Chu vi hình tam giác đều = 3 × cạnh = 3 × 6 = 18 cm."
+      },
+      {
+        "question": "Một hình tam giác có chu vi 15 cm, hai cạnh lần lượt là 4 cm và 5 cm. Cạnh còn lại dài bao nhiêu?",
+        "options": ["4 cm", "5 cm", "6 cm", "7 cm"],
+        "correctAnswer": 2,
+        "explanation": "Cạnh thứ ba = Chu vi - (cạnh 1 + cạnh 2) = 15 - (4 + 5) = 6 cm."
+      },
+      {
+        "question": "Chu vi của một hình chữ nhật có chiều dài gấp đôi chiều rộng. Nếu chiều rộng là 3 cm, chu vi là bao nhiêu?",
+        "options": ["12 cm", "15 cm", "18 cm", "21 cm"],
+        "correctAnswer": 2,
+        "explanation": "Dài = 2 × 3 = 6 cm; Chu vi = 2 × (6 + 3) = 18 cm."
+      },
+      {
+        "question": "Một hình vuông và một hình chữ nhật có cùng chu vi 16 cm. Nếu hình chữ nhật có chiều dài 5 cm, chiều rộng là bao nhiêu?",
+        "options": ["2 cm", "3 cm", "4 cm", "5 cm"],
+        "correctAnswer": 1,
+        "explanation": "Chu vi = 16 cm → 2 × (dài + rộng) = 16 → dài + rộng = 8 → rộng = 8 - 5 = 3 cm."
+      },
+      {
+        "question": "1 mét bằng bao nhiêu centimet?",
+        "options": ["10 cm", "100 cm", "1000 cm", "50 cm"],
+        "correctAnswer": 1,
+        "explanation": "1 mét = 100 centimet."
+      },
+      {
+        "question": "1 dm² bằng bao nhiêu cm²?",
+        "options": ["10 cm²", "100 cm²", "1000 cm²", "50 cm²"],
+        "correctAnswer": 1,
+        "explanation": "1 dm = 10 cm, nên 1 dm² = 10 × 10 = 100 cm²."
+      },
+      {
+        "question": "Một mảnh vườn hình vuông có cạnh 2 m. Diện tích của mảnh vườn là bao nhiêu cm²?",
+        "options": ["400 cm²", "4000 cm²", "40000 cm²", "400000 cm²"],
+        "correctAnswer": 2,
+        "explanation": "Diện tích = 2 × 2 = 4 m² = 4 × 10000 = 40000 cm²."
+      },
+      {
+        "question": "Chu vi của hình chữ nhật là 14 dm. Nếu tính bằng cm, chu vi là bao nhiêu?",
+        "options": ["14 cm", "140 cm", "1400 cm", "1,4 cm"],
+        "correctAnswer": 1,
+        "explanation": "1 dm = 10 cm, nên 14 dm = 14 × 10 = 140 cm."
+      },
+      {
+        "question": "Diện tích của hình vuông có cạnh 10 cm là bao nhiêu dm²?",
+        "options": ["1 dm²", "10 dm²", "100 dm²", "0,1 dm²"],
+        "correctAnswer": 0,
+        "explanation": "Diện tích = 10 × 10 = 100 cm² = 100 ÷ 100 = 1 dm²."
+      },
+      {
+        "question": "Một con đường dài 500 m. Nếu đổi sang dm, con đường dài bao nhiêu?",
+        "options": ["50 dm", "500 dm", "5000 dm", "50000 dm"],
+        "correctAnswer": 2,
+        "explanation": "1 m = 10 dm, nên 500 m = 500 × 10 = 5000 dm."
+      },
+      {
+        "question": "Chu vi và diện tích khác nhau như thế nào?",
+        "options": [
+          "Chu vi là độ dài xung quanh, diện tích là không gian bên trong",
+          "Chu vi là không gian bên trong, diện tích là độ dài xung quanh",
+          "Cả hai đều là độ dài",
+          "Cả hai đều là diện tích"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Chu vi đo độ dài xung quanh hình, còn diện tích đo không gian bên trong hình."
+      },
+      {
+        "question": "Đơn vị của chu vi là gì?",
+        "options": ["cm²", "cm", "m²", "m³"],
+        "correctAnswer": 1,
+        "explanation": "Chu vi đo độ dài, nên đơn vị là cm, m, dm,..."
+      },
+      {
+        "question": "Đơn vị của diện tích là gì?",
+        "options": ["cm", "cm²", "cm³", "m"],
+        "correctAnswer": 1,
+        "explanation": "Diện tích đo không gian, nên đơn vị là cm², m², dm²,..."
+      },
+      {
+        "question": "Một cái bàn hình chữ nhật có chiều dài 1 m và chiều rộng 50 cm. Diện tích của bàn là bao nhiêu cm²?",
+        "options": ["500 cm²", "5000 cm²", "50000 cm²", "500000 cm²"],
+        "correctAnswer": 2,
+        "explanation": "1 m = 100 cm, Diện tích = 100 × 50 = 50000 cm²."
+      },
+      {
+        "question": "Một khu vườn hình vuông có chu vi 40 m. Diện tích của khu vườn là bao nhiêu m²?",
+        "options": ["100 m²", "80 m²", "120 m²", "160 m²"],
+        "correctAnswer": 0,
+        "explanation": "Cạnh = 40 ÷ 4 = 10 m, Diện tích = 10 × 10 = 100 m²."
+      },
+      {
+        "question": "Một tấm thảm hình chữ nhật có chu vi 12 m và chiều dài 4 m. Diện tích của tấm thảm là bao nhiêu m²?",
+        "options": ["8 m²", "10 m²", "12 m²", "14 m²"],
+        "correctAnswer": 0,
+        "explanation": "2 × (dài + rộng) = 12 → dài + rộng = 6 → rộng = 6 - 4 = 2 m; Diện tích = 4 × 2 = 8 m²."
+      }
+    ]
+  }
